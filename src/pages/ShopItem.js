@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
 
 const ShopItem = (props) => {
@@ -14,7 +14,6 @@ const ShopItem = (props) => {
 	}
 
 	const addToCart = () => {
-		console.log(itemInCart(params.id));
 		const [inCart, cartIndex] = itemInCart(params.id);
 		if (!inCart) {
 			props.setCart([...props.cart].concat(
