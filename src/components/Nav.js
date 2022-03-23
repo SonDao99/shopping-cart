@@ -14,16 +14,18 @@ const Nav = (props) => {
 	}
 
 	return (
-		<ul>
-			<Link to={'/'}>
-				<li>Home</li>
+		<ul className='navBar'>
+			<Link style={{textDecoration:'none'}} to={'/'}>
+				<li className='logo'>OLD SCHOOL COOL</li>
 			</Link>
-			<Link to={'/shop'}>
-				<li>Shop</li>
-			</Link>
-			<Link to={'/checkout'}>
-				<li>Cart ({numberOfItems()})</li>
-			</Link>
+			<div className='shopAndCart'>
+				<Link style={{textDecoration:'none'}} to={'/shop'}>
+					<li>Shop</li>
+				</Link>
+				<Link style={{textDecoration:'none'}} to={'/checkout'}>
+					<li>Cart ({numberOfItems()})</li>
+				</Link>
+			</div>
 		</ul>
 	)
 }

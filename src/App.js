@@ -19,6 +19,8 @@ import wildLife from './images/wildLife.jpg';
 import yellowstone from './images/yellowstone.jpg';
 import zion from './images/zion.jpg';
 
+import './styles/style.css';
+
 function App() {
   const [cart, setCart] = useState([]);
 
