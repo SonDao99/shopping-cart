@@ -45,14 +45,16 @@ const CartItem = (props) => {
 
 	return(
 		<div className="cartItem">
-			<h3>{props.items[props.cartItem.id].name}</h3>
-			<img style={{height:'100px'}} src={props.items[props.cartItem.id].img} alt="itemImage" />
-			<div className="itemCounter">
-				<button onClick={decrementAmount} className="decrement">-</button>
-				<div>{props.cartItem.amount}</div>
-				<button onClick={incrementAmount} className="increment">+</button>
+			<img src={props.items[props.cartItem.id].img} alt="itemImage" />
+			<div className="cartItemDesc">
+				<h3>{props.items[props.cartItem.id].name}</h3>
+				<div className="itemCounter">
+					<button onClick={decrementAmount} className="decrement">-</button>
+					<div className="itemCount">{props.cartItem.amount}</div>
+					<button onClick={incrementAmount} className="increment">+</button>
+				</div>
+				<p>{(props.items[props.cartItem.id].price * props.cartItem.amount).toFixed(2)} USD</p>
 			</div>
-			<p>{(props.items[props.cartItem.id].price * props.cartItem.amount).toFixed(2)} USD</p>
 		</div>
 	)
 }

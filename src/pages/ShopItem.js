@@ -1,8 +1,9 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 const ShopItem = (props) => {
 	const params = useParams();
+  const navigate = useNavigate();
 
 	const itemInCart = (id) => {
 		for (let i = 0; i < props.cart.length; i += 1) {
@@ -29,10 +30,13 @@ const ShopItem = (props) => {
 
 	return (
 		<div className="shopItem">
-			<h2>{props.items[params.id].name}</h2>
-			<img src={props.items[params.id].img} alt='itemImage' style={{height:'300px', width:'auto'}}/>
-			<p>{props.items[params.id].price} USD</p>
-			<button onClick={addToCart} className="addToCart">Add to Cart</button>
+			<img src={props.items[params.id].img} alt='itemImage'/>
+			<div className="itemDesc">
+				<h2>{props.items[params.id].name}</h2>
+				<p>{props.items[params.id].price} USD</p>
+				<button onClick={addToCart} className="addToCart shadowBtn">Add to Cart</button>
+				<button onClick={() => {navigate(-1)}} className="shadowBtn">Back to Shop</button>
+			</div>
 		</div>
 	)
 };

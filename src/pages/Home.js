@@ -10,7 +10,7 @@ const Home = () => {
 				<div className="bannerText">
 					<div className="bannerTitle">Old School Cool</div>
 					<p>Decorate your room with beautiful vintage posters. Available now!</p>
-					<Link to={'/shop'}><button className="toShop">Shop</button></Link>
+					<Link to={'/shop'}><button className="shadowBtn">Shop</button></Link>
 				</div>
 			</div>
 		</div>

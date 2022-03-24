@@ -37,7 +37,10 @@ const ShoppingCart = (props) => {
 	
 	return(
 		<div className="shoppingCart">
-			{displayCart()}
+			<h2>Cart</h2>
+			<div className="cartItemContainer">
+				{displayCart()}
+			</div>
 			{displayTotal()}
 		</div>
 	)
