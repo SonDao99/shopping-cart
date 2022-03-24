@@ -34,6 +34,7 @@ body {
 	border-color: white;
 	border-width: 4px;
 	background-color: rgb(24, 23, 23);
+	gap: 50px;
 }
 
 .shopAndCart {
@@ -68,9 +69,10 @@ li, h2, h3, p {
 
 h2 {
 	font-weight: 1000;
-	font-size: 35px;
-	border-style: solid;
+	font-size: 40px;
 	padding: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
 	margin: 0;
 }
 
@@ -129,24 +131,39 @@ button:hover {
 	background-color: rgb(231, 230, 230);
 }
 
+.toShop:hover {
+	background-color: white;
+	box-shadow: 5px 5px black;
+}
+
+.toShop:active {
+	box-shadow: 2px 2px black;
+	transform: translate3d(3px, 3px, 0);
+}
+
 .shop, .shoppingCart {
 	background-color: rgb(235, 229, 229);
-	margin-left: 100px;
-	margin-right: 100px;
+	margin-left: 5%;
+	margin-right: 5%;
 	padding: 50px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	gap: 50px;
+	height: 100%;
 }
 
-.shop h2, .shop h3, .shop p, .shoppingCart h2, .shoppingCart h3, .shoppingCart p {
+.shop h2, .shoppingCart h2 {
+	font-weight: 1000;
 	color: rgb(24, 23, 23);
+	border-style: solid;
+	border-width: 4px;
 }
 
 .shop h3 {
 	font-size: 25px;
+	border-top-style: solid;
 }
 
 .displayShop {
@@ -154,11 +171,11 @@ button:hover {
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	gap: 5%;
+	overflow-y: auto;
 }
 
 .item {
-	height: 460px;
-	max-width: 30%;
+	min-width: 30%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -166,8 +183,29 @@ button:hover {
 	text-align: center;
 }
 
+.item h3, .item p {
+	margin: 0px;
+	padding: 5px;
+	max-width: 100%;
+	min-width: 30%;
+}
+
+.imgNamePrice {
+	background-color: rgb(24, 23, 23);
+	color: white;
+	border-style: solid;
+	border-color: rgb(235, 229, 229);
+	margin-bottom: 30px;
+}
+
+.imgNamePrice:hover {
+  background-color: rgb(121, 117, 117);
+	border-color: rgb(121, 117, 117);
+}
+
 .shop img {
 	max-height: 350px;
 	max-width: 100%;
 	object-fit: contain;
+	display: block;
 }

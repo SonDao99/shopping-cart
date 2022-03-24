@@ -9,9 +9,13 @@ const Shop = (props) => {
 			props.items.map(item => {
 				return(
 					<div key={item.id} className="item">
-						<Link style={{textDecoration:'none'}} to={`/shop/${item.id}`}><h3>{item.name}</h3></Link>
-						<img alt="itemImage" src={item.img} />
-						<p>{`${item.price} USD`}</p>
+						<Link style={{textDecoration:'none'}} to={`/shop/${item.id}`}>
+							<div className="imgNamePrice">
+								<img alt="itemImage" src={item.img} />
+								<h3>{item.name}</h3>
+								<p>{`${item.price} USD`}</p>
+							</div>
+						</Link>
 					</div>
 				)
 			})

@@ -26,17 +26,17 @@ function App() {
 
   const items = [
     {id: 0, name: 'Montreal Winter Sports', img: montreal, price: 19.99},
-    {id: 1, name: 'The National Parks Preserve Wild Life', img: nationalParks, price: 14.99},
+    {id: 1, name: 'National Parks Preserve', img: nationalParks, price: 14.99},
     {id: 2, name: 'Don\'t mix \'Em', img: dontMixEm, price: 29.99},
     {id: 3, name: 'Join the Navy', img: navy, price: 9.99},
     {id: 4, name: 'Puck', img: puck, price: 14.99},
     {id: 5, name: 'Scheveningen', img: scheveningen, price: 14.99},
-    {id: 6, name: 'Learn to Swim Campaign', img: swimCampaign, price: 19.99},
+    {id: 6, name: 'Learn to Swim', img: swimCampaign, price: 19.99},
     {id: 7, name: 'Swim for Health', img: swimHealth, price: 19.99},
     {id: 8, name: 'The Trumpet Calls', img: trumpets, price: 29.99},
     {id: 9, name: 'Don\'t Kill Our Wild Life', img: wildLife, price: 19.99},
-    {id: 10, name: 'Yellowstone National Park', img: yellowstone, price: 14.99},
-    {id: 11, name: 'Zion National Park', img: zion, price: 14.99}
+    {id: 10, name: 'Yellowstone', img: yellowstone, price: 14.99},
+    {id: 11, name: 'Zion', img: zion, price: 14.99}
   ];
 
   return (
