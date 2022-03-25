@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.c68c8b82.css",
+    "main.js": "/shopping-cart/static/js/main.19acdcf0.js",
+    "static/media/puck.jpg": "/shopping-cart/static/media/puck.fe151e6511d063c2ae9e.jpg",
+    "static/media/montreal.jpg": "/shopping-cart/static/media/montreal.899ce493bfd69893b6f1.jpg",
+    "static/media/swimCampaign.jpg": "/shopping-cart/static/media/swimCampaign.3a88fde0caa1381a6bdc.jpg",
+    "static/media/nationalParks.jpg": "/shopping-cart/static/media/nationalParks.a5a349a98cbd95804971.jpg",
+    "static/media/wildLife.jpg": "/shopping-cart/static/media/wildLife.3ddaab06d50d6208ffcf.jpg",
+    "static/media/trumpets.jpg": "/shopping-cart/static/media/trumpets.7c71d0975f07fe68f946.jpg",
+    "static/media/dontMixEm.jpg": "/shopping-cart/static/media/dontMixEm.eef75394ac85cf2603cf.jpg",
+    "static/media/scheveningen.jpg": "/shopping-cart/static/media/scheveningen.263f405a0e4f9a9af003.jpg",
+    "static/media/swimHealth.jpg": "/shopping-cart/static/media/swimHealth.1a08f2c68b52ed6ba596.jpg",
+    "static/media/home.jpg": "/shopping-cart/static/media/home.b2a4ea4d19648ead1495.jpg",
+    "static/media/navy.jpg": "/shopping-cart/static/media/navy.a721732a2721ab5b6f0f.jpg",
+    "static/media/zion.jpg": "/shopping-cart/static/media/zion.3a6ac8bbda0548c5a099.jpg",
+    "static/media/yellowstone.jpg": "/shopping-cart/static/media/yellowstone.413e4eb86efe34a4fef7.jpg",
+    "static/media/purchase.jpg": "/shopping-cart/static/media/purchase.b320254c2563cf0c37de.jpg",
+    "static/media/MomcakeThin-9Y6aZ.otf": "/shopping-cart/static/media/MomcakeThin-9Y6aZ.6e2715aafeb7ca8794a6.otf",
+    "index.html": "/shopping-cart/index.html",
+    "main.c68c8b82.css.map": "/shopping-cart/static/css/main.c68c8b82.css.map",
+    "main.19acdcf0.js.map": "/shopping-cart/static/js/main.19acdcf0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c68c8b82.css",
+    "static/js/main.19acdcf0.js"
+  ]
+}
