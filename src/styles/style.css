@@ -28,13 +28,14 @@ body {
 	margin: 0;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	padding-right: 50px;
-	padding-left: 50px;
+	padding-right: 5%;
+	padding-left: 5%;
 	border-bottom-style: solid;
 	border-color: white;
 	border-width: 4px;
 	background-color: rgb(24, 23, 23);
 	gap: 50px;
+	text-align: center;
 }
 
 .shopAndCart {
@@ -67,13 +68,17 @@ h2, h3, p {
 	color: rgb(24, 23, 23);
 }
 
-h2 {
+h2{
 	font-weight: 1000;
 	font-size: 40px;
 	padding: 5px;
 	padding-left: 20px;
 	padding-right: 20px;
 	margin: 0;
+}
+
+.totalPrice{
+	font-size: 30px;
 }
 
 .bannerContainer {
@@ -98,7 +103,7 @@ h2 {
 	color: white;
 	text-shadow: 1px 1px rgb(95, 93, 93);
 	width: 35%;
-	padding: 50px;
+	margin: 5%;
 	font-size: 30px;
 }
 
@@ -108,7 +113,7 @@ p {
 
 .banner {
 	object-fit: cover;
-	height: 400px;
+	min-height: 400px;
 	width: 100%;
 	border-bottom-style: solid;
 	border-color: white;
@@ -119,7 +124,10 @@ button {
 	font-family: inherit;
 	font-size: 25px;
 	border-radius: 0;
-	border-style: none;
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	box-sizing: border-box;
 	background-color: white;
 	padding: 10px;
 	padding-left: 20px;
@@ -147,7 +155,7 @@ button:active {
 	transform: translate3d(3px, 3px, 0);
 }
 
-.shop, .shoppingCart, .shopItem, .emptyCart {
+.shop, .shoppingCart, .shopItem, .emptyCart, .purchase {
 	background-color: rgb(235, 229, 229);
 	margin-left: 5%;
 	margin-right: 5%;
@@ -160,11 +168,34 @@ button:active {
 	height: 100%;
 }
 
+.purchase {
+	padding: 0;
+	gap: 10px;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+.purchase h2 {
+	font-size: 35px;
+	text-align: center;
+	border-style: solid;
+	background-color: white;
+}
+
+.purchase img {
+	width: 70%;
+}
+
+.shoppingCart, .emptyCart {
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
 .shopItem {
 	flex-direction: row;
 }
 
-.shop h2, .shoppingCart h2 {
+.shop h2, .shoppingCart h2{
 	font-weight: 1000;
 	color: rgb(24, 23, 23);
 	background-color: white;
@@ -234,9 +265,10 @@ button:active {
 	gap: 30px;
 }
 
-.itemDesc h2 {
+.itemDesc h2, .cartItem h3, .totalPrice, .emptyCart h2 {
 	border-top-style: solid;
 	border-bottom-style: solid;
+	text-align: center;
 }
 
 .itemDesc p {
@@ -292,4 +324,59 @@ button:active {
 	justify-content: space-evenly;
 	align-items: center;
 	gap: 20px;
+}
+
+@media (max-width: 839px) {
+	.bannerContainer {
+		flex-direction: column;
+		position: relative;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.bannerText {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		color: white;
+		text-shadow: 1px 1px rgb(95, 93, 93);
+		width: 80%;
+		margin: 0;
+		padding: 5%;
+		font-size: 30px;
+	}
+
+	.bannerText p {
+		text-align: center;
+	}
+	
+	.banner {
+		object-fit: contain;
+		min-height: auto;
+	}
+
+	.shopItem {
+		flex-direction: column;
+	}
+
+	.shopItem img {
+		width: 90%;
+		height: auto;
+	}
+
+	.shoppingCart, .emptyCart, .purchase {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	.cartItem {
+		flex-direction: column;
+		gap: 0;
+	}
+
+	.cartItem h3 {
+		margin: 2%;
+	}
 }

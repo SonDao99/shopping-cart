@@ -1,5 +1,6 @@
 import React from "react";
 import CartItem from "./CartItem";
+import { Link } from "react-router-dom";
 
 const ShoppingCart = (props) => {
   const displayCart = () => {
@@ -27,12 +28,21 @@ const ShoppingCart = (props) => {
 		return total.toFixed(2);
 	}
 
+	const handlePurchase = () => {
+		props.setCart([]);
+	}
+
 	const displayTotal = () => {
 		if (props.cart.length === 0) {
 			return;
 		}
 
-		return(`Total: ${calculateTotal()} USD`);
+		return(
+			<>
+				<div className="totalPrice">Total: {calculateTotal()} USD</div>
+				<Link to={'/purchase'}><button className="shadowBtn" onClick={handlePurchase}>Purchase</button></Link>
+			</>
+		);
 	}
 	
 	return(

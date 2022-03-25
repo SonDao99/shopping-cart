@@ -3,6 +3,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Nav from './components/Nav';
 import Home from './pages/Home';
 import Shop from './pages/Shop';
+import Purchase from './pages/Purchase';
 import Checkout from './pages/Checkout';
 import ShopItem from './pages/ShopItem';
 
@@ -59,6 +60,10 @@ function App() {
           <Route
             path='/checkout'
             element={<Checkout cart={cart} setCart={setCart} items={items} />}
+          />
+          <Route 
+            path='/purchase'
+            element={<Purchase />}
           />
         </Routes>
       </BrowserRouter>

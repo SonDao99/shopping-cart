@@ -1,9 +1,8 @@
 import React from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 const ShopItem = (props) => {
 	const params = useParams();
-  const navigate = useNavigate();
 
 	const itemInCart = (id) => {
 		for (let i = 0; i < props.cart.length; i += 1) {
@@ -35,7 +34,7 @@ const ShopItem = (props) => {
 				<h2>{props.items[params.id].name}</h2>
 				<p>{props.items[params.id].price} USD</p>
 				<button onClick={addToCart} className="addToCart shadowBtn">Add to Cart</button>
-				<button onClick={() => {navigate(-1)}} className="shadowBtn">Back to Shop</button>
+				<Link to={'/shop'}><button className="shadowBtn">Back to Shop</button></Link>
 			</div>
 		</div>
 	)
